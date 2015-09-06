@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.parse.Parse;
+
 
 public class HomePage extends Activity {
     // button to create new category
@@ -33,6 +35,7 @@ public class HomePage extends Activity {
                 startActivity(i);
             }
         });
+
     }
 
     @Override

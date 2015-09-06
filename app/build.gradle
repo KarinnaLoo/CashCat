@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.parse'
 
 android {
     compileSdkVersion 22
@@ -19,7 +20,24 @@ android {
     }
 }
 
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://maven.parse.com/repo' }
+    }
+    dependencies {
+        classpath 'com.parse.tools:gradle:1.+'
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.1.1'
+    compile project(':ParseLoginUI')
+    compile 'com.parse.bolts:bolts-android:1.+'
+    // Crash Reporting
+    compile fileTree(dir: 'libs', include: 'ParseCrashReporting-*.jar')
+
+    // Parse
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
 }
