@@ -4,9 +4,10 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/cashcat"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
+
         <activity
             android:name=".HomePage"
             android:label="@string/app_name" >
@@ -16,6 +17,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ShowTransactions"
+            android:parentActivityName=".HomePage">
+        </activity>
+
+        <activity
+            android:name=".NewCategory"
+            android:parentActivityName=".HomePage">
+        </activity>
+
     </application>
 
 </manifest>
