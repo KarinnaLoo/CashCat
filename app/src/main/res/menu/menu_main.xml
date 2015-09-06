@@ -8,4 +8,11 @@
         android:showAsAction="ifRoom">
     </item>
 
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="logout"
+        android:showAsAction="ifRoom">
+    </item>
+
 </menu>

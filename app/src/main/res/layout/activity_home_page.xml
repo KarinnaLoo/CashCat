@@ -1,16 +1,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".HomePage">
 
-    <View
+    <!-- pie chart -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pie"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:background="@android:color/holo_green_dark"/>
+        android:layout_margin="12dp">
+    </com.github.mikephil.charting.charts.PieChart>
 
-    <!-- pie chart -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

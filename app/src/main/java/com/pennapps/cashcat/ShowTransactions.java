@@ -26,6 +26,7 @@ public class ShowTransactions extends Activity{
         super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.menu_main, menu);
         menu.findItem(R.id.transactions).setVisible(false);
+        menu.findItem(R.id.logout).setVisible(false);
         return true;
     }
 
